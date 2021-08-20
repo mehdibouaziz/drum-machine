@@ -8,6 +8,14 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/resources/css/index.css" media="all">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="/resources/js/script.js"></script>
+    <script src="resources/js/jquery.js"></script>
+
 
     <title>Drum Machine</title>
   </head>
@@ -15,28 +23,33 @@
 
   <body>
     
-    <div class='container-sm' id='drum-machine'>
-        <div class='container' id='keyboard'>
-            <div class='row g-2'>
-                <button class='col btn btn-primary'>Q</button>
-                <button class='col btn btn-primary'>Q</button>
-                <button class='col btn btn-primary'>Q</button>
-            </div>
-            <div class='row'>
-                <button class='col btn btn-primary'>Q</button>
-                <button class='col btn btn-primary'>Q</button>
-                <button class='col btn btn-primary'>Q</button>
-            </div>
-            <div class='row'>
-                <button class='col btn btn-primary'>Q</button>
-                <button class='col btn btn-primary'>Q</button>
-                <button class='col btn btn-primary'>Q</button>
-            </div>
-
-            
-
-
+    <div class='' id='drum-machine'>
+      <div class='' id='keyboard'>   <!-- use javascript event onkeydown to react on keyboard-->
+        <div class='' id='keyboard-row'>
+          <div class='keyboard-col' id=''>
+            <button class="btn-warning" id=''>Q</button>
+            <button class='btn-warning' id=''>W</button>
+            <button class='btn-warning' id=''>E</button>
+          </div>
+          <div class='keyboard-col' id=''>
+            <button class='btn-primary' id=''>A</button>
+            <button class='btn-primary' id=''>S</button>
+            <button class='btn-primary' id=''>D</button>
+          </div>
+          <div class='keyboard-col' id=''>
+            <button class='btn-danger' id=''>Z</button>
+            <button class='btn-danger' id=''>X</button>
+            <button class='btn-danger' id=''>C</button>
+          </div>
         </div>
+      </div>
+
+      <div class='' id='console'>
+        <div class='' id='display-box'>
+            <p class ='m-2' id='display'>hello world</p>
+        </div>
+      </div>
+
     </div>
 
   
@@ -48,7 +61,6 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
   </body>
 </html>
