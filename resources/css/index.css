@@ -4,14 +4,20 @@
     width: 300px;
     height: 300px;
     padding: 10px;
-    background-color: black;
-    border: dotted 1px yellow;
 }
+
 #console{
     width: 300px;
     height: 300px;
+}
+
+#drum-machine{
     background-color: black;
+}
+
+#drum-machine-table{
     border: dotted 1px yellow;
+    border-radius: 10px;
 }
 
 
@@ -23,11 +29,13 @@
 
 #display-box{
     border: dotted 1px yellow;
+    border-radius: 2px;
 }
 
 #display{
     color: white;
     font-family: monospace;
+    font-size: larger;
 }
 
 
@@ -35,7 +43,10 @@
 
 @media only screen and (max-width: 600px) {
     /* change the layout to have the keyboard bottom and console on top */
-    #drum-machine{
-        flex-direction: column-reverse;
+    #drum-machine-table{
+        flex-direction: column-reverse !important;
+    }
+    #console{
+        height: 100px;
     }
   }

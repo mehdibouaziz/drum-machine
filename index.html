@@ -17,41 +17,45 @@
 
 
     <title>Drum Machine</title>
+    <link rel="shortcut icon" href="resources/img/drums.png">
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
   </head>
 
 
   <body>
     
     <div class='' id='drum-machine'>
-      <div class='' id='keyboard'>   <!-- use javascript event onkeydown to react on keyboard-->
-        <div class='' id='keyboard-row'>
-          <div class='keyboard-col' id=''>
-            <button class="btn-warning" id='chord1' ><audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3"></audio>Q</button>
-            <button class='btn-warning' id='chord2'><audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3"></audio>W</button>
-            <button class='btn-warning' id=''>E</button>
-          </div>
-          <div class='keyboard-col' id=''>
-            <button class='btn-primary' id=''>A</button>
-            <button class='btn-primary' id=''>S</button>
-            <button class='btn-primary' id=''>D</button>
-          </div>
-          <div class='keyboard-col' id=''>
-            <button class='btn-danger' id=''>Z</button>
-            <button class='btn-danger' id=''>X</button>
-            <button class='btn-danger' id=''>C</button>
+
+      <div class='' id='drum-machine-table'>
+        <div class='' id='keyboard'>   <!-- use javascript event onkeydown to react on keyboard-->
+          <div class='' id='keyboard-row'>
+            <div class='keyboard-col' id=''>
+              <button class="btn-warning" id='Heater-1' ><audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>Q</button>
+              <button class='btn-primary' id='Heater-4'><audio class="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>A</button>
+              <button class='btn-danger' id="Kick-n'-Hat"><audio class="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>Z</button>
+            </div>
+            <div class='keyboard-col' id=''>
+              <button class="btn-warning" id='Heater-2' ><audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>W</button>
+              <button class='btn-primary' id='Clap'><audio class="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>S</button>
+              <button class='btn-danger' id='Kick'><audio class="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>X</button>
+            </div>
+            <div class='keyboard-col' id=''>
+              <button class="btn-warning" id='Heater-3' ><audio class="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>E</button>
+              <button class='btn-primary' id='Open-HH'><audio class="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>D</button>
+              <button class='btn-danger' id='Closed-HH'><audio class="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>C</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class='' id='console'>
-        <div class='' id='display-box'>
-            <p class ='m-2' id='display'>hello world</p>
+        <div class='' id='console'>
+          <div class='' id='display-box'>
+              <p class ='m-2' id='display'>Hello Drummer!</p>
+          </div>
         </div>
+
       </div>
 
-    </div>
-
-  
+    </div> 
 
 
 
