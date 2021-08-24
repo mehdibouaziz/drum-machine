@@ -11,4 +11,23 @@ $(document).ready(function(){
     $(".keyboard-col").attr("class", 'keyboard-col h-100 d-flex flex-column justify-content-center align-items-center flex-grow-1 m-1');
     $("#console").attr("class", 'd-flex flex-column justify-content-center align-items-center');
     $("#display-box").attr("class", 'd-flex flex-row justify-content-center align-items-center w-75');
+
+    /*
+     $("#chord1").click(function() {
+      $("#Q").currentTime = 0;
+      $("#Q").get(0).play();
+    });
+    */
+
+    
+    $("button.drum-pad").click(function(){
+      var ID = "#" + $(this).text();
+      console.log(ID);
+      $(ID).currentTime = 0;
+      $(ID).get(0).play();
+    });
+    
+
+
   });
+
