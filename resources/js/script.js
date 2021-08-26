@@ -14,6 +14,21 @@ $(document).ready(function(){
     $("#console").attr("class", 'd-flex flex-column justify-content-center align-items-center');
     $("#display-box").attr("class", 'd-flex flex-row justify-content-center align-items-center w-75');
 
+    let sources = {
+      Q: 'resources/audio/mixkit-guitar-stroke-down-slow-2339.wav',
+      W: 'resources/audio/mixkit-bass-guitar-single-note-2331.wav',
+      E: 'resources/audio/mixkit-nylon-guitar-single-note-2332.wav',
+      A: 'resources/audio/mixkit-hand-tribal-drum-562.wav',
+      S: 'resources/audio/mixkit-hard-horror-hit-drum-565.wav',
+      D: 'resources/audio/mixkit-drum-deep-impact-563.wav',
+      Z: 'resources/audio/Chord_1.mp3',
+      X: 'resources/audio/Chord_2.mp3',
+      C: 'resources/audio/Chord_3.mp3',
+    };
+    $.each(sources, function (indexInArray, valueOfElement) { 
+       $('#'+indexInArray).attr("src",valueOfElement);
+    });
+
     /*
      $("#chord1").click(function() {
       $("#Q").currentTime = 0;
